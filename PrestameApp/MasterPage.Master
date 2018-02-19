@@ -150,16 +150,32 @@
                     <!-- sidebar menu: : style can be found in sidebar.less -->
                     <ul class="sidebar-menu" data-widget="tree">
                         <li class="header">Menú Principal</li>
-                        <li>
+                        
+                        <li id="inicio">
                             <a href="Inicio.aspx">
                                 <i class="fa fa-home"></i>
                                 <span>Inicio</span>
                             </a>
                         </li>
-                        <li>
+
+                        <li id="crearempresa">
                             <a href="CrearEmpresa.aspx">
                                 <i class="fa fa-industry"></i>
                                 <span>Crear Empresa</span>
+                            </a>
+                        </li>
+
+                        <li id="crearempleado">
+                            <a href="CrearEmpleado.aspx">
+                                <i class="fa fa-user-plus"></i>
+                                <span>Crear Empleado</span>
+                            </a>
+                        </li>
+
+                        <li id="empresaspendientes">
+                            <a href="EmpresasPendientes.aspx">
+                                <i class="fa fa-clock-o"></i>
+                                <span>Empresas Pendientes</span>
                             </a>
                         </li>
 
@@ -204,6 +220,8 @@
         $(document).ready(function () {
             $('.sidebar-menu').tree()
         })
+
+        $('#<%= System.IO.Path.GetFileNameWithoutExtension(System.Web.HttpContext.Current.Request.Url.AbsolutePath).ToLower()%>').addClass("active");
     </script>
 </body>
 </html>
