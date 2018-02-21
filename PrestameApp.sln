@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrestameApp", "PrestameApp\PrestameApp.csproj", "{90F54BB5-22E5-4665-89B4-939DB817B954}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{AF2FA81E-1531-4578-902B-BCF7E93BFB2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{AD681EF0-365A-4CC5-969E-01589E310813}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{90F54BB5-22E5-4665-89B4-939DB817B954}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90F54BB5-22E5-4665-89B4-939DB817B954}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90F54BB5-22E5-4665-89B4-939DB817B954}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF2FA81E-1531-4578-902B-BCF7E93BFB2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF2FA81E-1531-4578-902B-BCF7E93BFB2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF2FA81E-1531-4578-902B-BCF7E93BFB2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF2FA81E-1531-4578-902B-BCF7E93BFB2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD681EF0-365A-4CC5-969E-01589E310813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD681EF0-365A-4CC5-969E-01589E310813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD681EF0-365A-4CC5-969E-01589E310813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD681EF0-365A-4CC5-969E-01589E310813}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
