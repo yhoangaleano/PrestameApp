@@ -14,6 +14,9 @@
     <link href="Content/AdminLTE.min.css" rel="stylesheet" />
     <link href="Content/skins/_all-skins.min.css" rel="stylesheet" />
 
+    <link href="Content/alertifyjs/alertify.min.css" rel="stylesheet" />
+    <link href="Content/alertifyjs/themes/bootstrap.min.css" rel="stylesheet" />
+
     <asp:ContentPlaceHolder ID="encabezado" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -150,7 +153,7 @@
                     <!-- sidebar menu: : style can be found in sidebar.less -->
                     <ul class="sidebar-menu" data-widget="tree">
                         <li class="header">Menú Principal</li>
-                        
+
                         <li id="inicio">
                             <a href="Inicio.aspx">
                                 <i class="fa fa-home"></i>
@@ -203,25 +206,37 @@
             </footer>
         </div>
 
+        <script src="scripts/jquery-1.9.1.min.js"></script>
+        <script src="scripts/jquery-ui.min.js"></script>
+        <script>
+            $.widget.bridge('uibutton', $.ui.button);
+        </script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/jquery.slimscroll.min.js"></script>
+        <script src="scripts/fastclick.js"></script>
+        <script src="scripts/adminlte.min.js"></script>
+        <script src="scripts/demo.js"></script>
+
+        <script src="scripts/alertify.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('.sidebar-menu').tree()
+            })
+
+            $('#<%= System.IO.Path.GetFileNameWithoutExtension(System.Web.HttpContext.Current.Request.Url.AbsolutePath).ToLower()%>').addClass("active");
+
+            function alertaExito(mensaje) {
+                alertify.success(mensaje);
+            }
+
+            function alertaError(mensaje) {
+                alertify.error(mensaje);
+            }
+
+        </script>
+
     </form>
 
-    <script src="scripts/jquery-1.9.1.min.js"></script>
-    <script src="scripts/jquery-ui.min.js"></script>
-    <script>
-        $.widget.bridge('uibutton', $.ui.button);
-    </script>
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/jquery.slimscroll.min.js"></script>
-    <script src="scripts/fastclick.js"></script>
-    <script src="scripts/adminlte.min.js"></script>
-    <script src="scripts/demo.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $('.sidebar-menu').tree()
-        })
-
-        $('#<%= System.IO.Path.GetFileNameWithoutExtension(System.Web.HttpContext.Current.Request.Url.AbsolutePath).ToLower()%>').addClass("active");
-    </script>
 </body>
 </html>

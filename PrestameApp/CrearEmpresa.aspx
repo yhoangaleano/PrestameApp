@@ -66,7 +66,8 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <asp:Label Text="Correo Electrónico" runat="server" AssociatedControlID="txtCorreoElectronico" />
-                            <asp:TextBox ID="txtCorreoElectronico" TextMode="Email" runat="server" placeholder="Ejm: info@colanta.com.co" CssClass="form-control" />
+                            <asp:TextBox ID="txtCorreoElectronico" TextMode="Email" runat="server" placeholder="Ejm: info@colanta.com.co" CssClass="form-control" OnTextChanged="txtCorreoElectronico_TextChanged" AutoPostBack="true" />
+                            <asp:Label ID="lblErrorCorreoElectronico" runat="server" CssClass="help-block text-danger" Visible="false" />
                         </div>
                     </div>
 
@@ -104,7 +105,7 @@
 
                         <asp:Button Text="Cancelar" ID="btnCancelarEmpresa" runat="server" CssClass="btn btn-default" />
 
-                        <asp:LinkButton ID="btnGuardarEmpresa" runat="server" CssClass="btn btn-success">
+                        <asp:LinkButton ID="btnGuardarEmpresa" runat="server" CssClass="btn btn-success" OnClick="btnGuardarEmpresa_Click">
                             <i class="fa fa-check"></i>
                             Guardar Empresa
                         </asp:LinkButton>
