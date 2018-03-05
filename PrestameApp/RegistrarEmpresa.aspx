@@ -84,7 +84,7 @@
                             <asp:Button ID="btnCancelar" Text="Cancelar" CssClass="btn btn-default btn-block btn-flat" runat="server" />
                         </div>
                         <div class="col-md-6">
-                            <asp:Button ID="btnRegistrarme" Text="Registrarme" CssClass="btn btn-primary btn-block btn-flat" runat="server" />
+                            <asp:Button ID="btnRegistrarme" Text="Registrarme" CssClass="btn btn-primary btn-block btn-flat" runat="server" OnClick="btnRegistrarme_Click" />
                         </div>
 
                     </div>

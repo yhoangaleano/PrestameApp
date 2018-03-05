@@ -13,6 +13,15 @@ namespace PrestameApp {
     public partial class Formulario_web11 {
         
         /// <summary>
+        /// Control vsInformacionEmpresa.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary vsInformacionEmpresa;
+        
+        /// <summary>
         /// Control txtNIT.
         /// </summary>
         /// <remarks>
@@ -20,6 +29,24 @@ namespace PrestameApp {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNIT;
+        
+        /// <summary>
+        /// Control txtNITRequired.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator txtNITRequired;
+        
+        /// <summary>
+        /// Control txtNITUnique.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator txtNITUnique;
         
         /// <summary>
         /// Control txtRazonSocial.
@@ -31,6 +58,15 @@ namespace PrestameApp {
         protected global::System.Web.UI.WebControls.TextBox txtRazonSocial;
         
         /// <summary>
+        /// Control txtRazonSocialRequired.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator txtRazonSocialRequired;
+        
+        /// <summary>
         /// Control txtTelefono.
         /// </summary>
         /// <remarks>
@@ -38,6 +74,15 @@ namespace PrestameApp {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTelefono;
+        
+        /// <summary>
+        /// Control txtTelefonoRequired.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator txtTelefonoRequired;
         
         /// <summary>
         /// Control txtNombreResponsable.
@@ -49,6 +94,15 @@ namespace PrestameApp {
         protected global::System.Web.UI.WebControls.TextBox txtNombreResponsable;
         
         /// <summary>
+        /// Control txtNombreResponsableRequired.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator txtNombreResponsableRequired;
+        
+        /// <summary>
         /// Control txtCorreoElectronico.
         /// </summary>
         /// <remarks>
@@ -58,13 +112,31 @@ namespace PrestameApp {
         protected global::System.Web.UI.WebControls.TextBox txtCorreoElectronico;
         
         /// <summary>
-        /// Control lblErrorCorreoElectronico.
+        /// Control txtCorreoElectronicoRequired.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblErrorCorreoElectronico;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator txtCorreoElectronicoRequired;
+        
+        /// <summary>
+        /// Control txtCorreoElectronicoUnique.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator txtCorreoElectronicoUnique;
+        
+        /// <summary>
+        /// Control txtCorreoElectronicoRegularEmail.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator txtCorreoElectronicoRegularEmail;
         
         /// <summary>
         /// Control txtUsuario.
@@ -76,6 +148,24 @@ namespace PrestameApp {
         protected global::System.Web.UI.WebControls.TextBox txtUsuario;
         
         /// <summary>
+        /// Control txtUsuarioRequired.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator txtUsuarioRequired;
+        
+        /// <summary>
+        /// Control txtUsuarioUnique.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator txtUsuarioUnique;
+        
+        /// <summary>
         /// Control txtContrasena.
         /// </summary>
         /// <remarks>
@@ -85,6 +175,15 @@ namespace PrestameApp {
         protected global::System.Web.UI.WebControls.TextBox txtContrasena;
         
         /// <summary>
+        /// Control txtContrasenaRequired.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator txtContrasenaRequired;
+        
+        /// <summary>
         /// Control txtConfirmarContrasena.
         /// </summary>
         /// <remarks>
@@ -92,6 +191,24 @@ namespace PrestameApp {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtConfirmarContrasena;
+        
+        /// <summary>
+        /// Control txtConfirmarContrasenaRequired.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator txtConfirmarContrasenaRequired;
+        
+        /// <summary>
+        /// Control txtConfirmarContrasenaCompare.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator txtConfirmarContrasenaCompare;
         
         /// <summary>
         /// Control btnCancelarEmpresa.

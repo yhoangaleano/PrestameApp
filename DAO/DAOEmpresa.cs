@@ -42,6 +42,7 @@ namespace DAO
                     comando.Parameters.AddWithValue("@usuario", _DTOEmpresa.usuario.usuario);
                     comando.Parameters.AddWithValue("@contrasena", _DTOEmpresa.usuario.contrasena);
                     comando.Parameters.AddWithValue("@idRol", _DTOEmpresa.usuario.idRol);
+                    comando.Parameters.AddWithValue("@estado", _DTOEmpresa.usuario.estado);
 
                     adaptador = new SqlDataAdapter(comando);
                     adaptador.Fill(_dt); // El fill adapta los datos mque tiene el "adaptador" para que se convierta en un DataTable o un DataSet
@@ -100,7 +101,79 @@ namespace DAO
             return _dt;
 
         }
-        
 
+        public DataTable crud_tblEmpresaExisteNIT(string NIT)
+        {
+            DataTable _dt = new DataTable();
+
+            using (conexion = new SqlConnection(cadenaConexion))
+            {
+
+                try
+                {
+                    conexion.Open();
+                    comando = new SqlCommand("crud_tblEmpresaExisteNIT", conexion);
+                    comando.CommandType = CommandType.StoredProcedure;
+
+                    comando.Parameters.AddWithValue("@NIT", NIT);
+
+
+                    adaptador = new SqlDataAdapter(comando);
+                    adaptador.Fill(_dt); // El fill adapta los datos mque tiene el "adaptador" para que se convierta en un DataTable o un DataSet
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    throw ex;
+                }
+
+                finally
+                {
+                    conexion.Close();
+                }
+
+            }
+
+            return _dt;
+
+        }
+
+        public DataTable crud_tblUsuarioExisteUsuario(string usuario)
+        {
+            DataTable _dt = new DataTable();
+
+            using (conexion = new SqlConnection(cadenaConexion))
+            {
+
+                try
+                {
+                    conexion.Open();
+                    comando = new SqlCommand("crud_tblUsuarioExisteUsuario", conexion);
+                    comando.CommandType = CommandType.StoredProcedure;
+
+                    comando.Parameters.AddWithValue("@usuario", usuario);
+
+
+                    adaptador = new SqlDataAdapter(comando);
+                    adaptador.Fill(_dt); // El fill adapta los datos mque tiene el "adaptador" para que se convierta en un DataTable o un DataSet
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    throw ex;
+                }
+
+                finally
+                {
+                    conexion.Close();
+                }
+
+            }
+
+            return _dt;
+
+        }
     }
 }
